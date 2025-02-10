@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu de Memory</title>
+</head>
+<body>
+    <div id="home-screen" class="home-screen text-center">
+        <h1>Jeu de Memory</h1>
+        <button id="start-game" class="btn btn-primary">Commencer le Jeu</button>
+        <button id="view-scores" class="btn btn-secondary">Voir les Scores</button>
+    </div>
+
+    <div id="game-screen" class="game-screen" style="display: none;">
+        <h2 id="timer">Temps: 0s</h2>
+        <div id="card-container" class="row"></div>
+        <button id="restart-button" class="btn btn-primary mt-3" style="display: none;">Redémarrer le Jeu</button>
+        <h2 id="final-score" style="display: none;"></h2>
+    </div>
+
+    <div id="scores-screen" class="scores-screen" style="display: none;">
+        <h2>Tableau des Scores</h2>
+        <ul id="score-list"></ul>
+        <button id="back-to-home" class="btn btn-primary">Retour à l'accueil</button>
+    </div>
+
+    <div id="rules-screen" style="display: none;">
+        <h2>Règles du Jeu</h2>
+        <p>
+            1. Le jeu consiste à trouver toutes les paires de cartes identiques.<br>
+            2. Cliquez sur une carte pour la retourner.<br>
+            3. Ensuite, cliquez sur une autre carte pour la retourner.<br>
+            4. Si les cartes retournées sont identiques, elles resteront visibles.<br>
+            5. Si elles ne correspondent pas, elles seront retournées après quelques secondes.<br>
+            6. Le jeu continue jusqu'à ce que toutes les paires soient trouvées ou que le temps soit écoulé.<br>
+            7. Vous pouvez voir votre temps et votre score à la fin du jeu.<br>
+        </p>
+        <button id="close-rules">Fermer</button>
+    </div>
+    
+    <button id="view-rules">Voir les Règles</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
